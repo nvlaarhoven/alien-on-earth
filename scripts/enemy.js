@@ -15,6 +15,9 @@ Quintus.ActionPlatformerEnemy = function(Q) {
 					//make the player jump
 	        collision.obj.p.vy = -100;
 
+          //play sound
+          Q.audio.play('kill-enemy.mp3');
+
 	        //kill enemy
 	        this.destroy();
 				}
