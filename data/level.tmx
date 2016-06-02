@@ -5,6 +5,13 @@
   <tile id="19">
    <properties>
     <property name="Class" value="Player"/>
+    <property name="sheet" value="player"/>
+   </properties>
+  </tile>
+  <tile id="475">
+   <properties>
+    <property name="Class" value="GroundEnemy"/>
+    <property name="sheet" value="bug"/>
    </properties>
   </tile>
  </tileset>
@@ -4364,5 +4371,12 @@
  </layer>
  <objectgroup name="Object Layer 1" width="38" height="38">
   <object gid="20" x="31" y="678"/>
+  <object gid="476" x="542" y="693"/>
+  <object gid="476" x="123" y="483"/>
+  <object gid="476" x="516" y="567"/>
+  <object gid="476" x="113" y="673"/>
+  <object gid="476" x="397" y="210"/>
+  <object gid="476" x="709" y="252"/>
+  <object gid="476" x="109" y="105"/>
  </objectgroup>
 </map>
