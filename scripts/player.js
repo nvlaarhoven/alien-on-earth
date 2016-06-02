@@ -23,6 +23,9 @@ Quintus.ActionPlatformerPlayer = function(Q) {
       this.on("bump.bottom", function(){
         that.p.isJumping = false;
       });
+    },
+    damage: function() {
+      Q.stageScene("level");
     }
   });
 };

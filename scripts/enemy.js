@@ -6,7 +6,7 @@ Quintus.ActionPlatformerEnemy = function(Q) {
 
 			entity.on("bump.left, bump.right, bump.bottom", function(collision){
 				if(collision.obj.isA("Player")) {
-					console.log('you died!');
+					collision.obj.damage();
 				}
 			});
 
