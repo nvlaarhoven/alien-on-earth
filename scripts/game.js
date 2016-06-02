@@ -13,6 +13,10 @@ window.addEventListener("load",function() {
     //define scene
     Q.scene("level", function(stage){
       Q.stageTMX("level.tmx", stage);
+
+      //follow the player with viewport in both x and y direction
+      var player = Q("Player").first();
+      stage.add("viewport").follow(player, {x: true, y: true});
     });
 
     //load assets

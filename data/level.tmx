@@ -10,6 +10,7 @@
  </tileset>
  <layer name="Background1" width="38" height="38">
   <properties>
+   <property name="boundingBox" value="true"/>
    <property name="type" value="0"/>
   </properties>
   <data>
