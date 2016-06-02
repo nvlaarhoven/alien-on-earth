@@ -15,7 +15,8 @@ window.addEventListener("load",function() {
     });
 
     //load assets
-    Q.loadTMX("level.tmx", function(){
+    Q.loadTMX("level.tmx, sprites.json, sprites.png", function() {
+      Q.compileSheets("sprites.png","sprites.json");
       Q.stageScene("level");
     });
 
