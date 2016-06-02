@@ -2,6 +2,11 @@
 <map version="1.0" orientation="orthogonal" width="38" height="38" tilewidth="21" tileheight="21">
  <tileset firstgid="1" name="spritesheet" tilewidth="21" tileheight="21" spacing="2">
   <image source="../images/spritesheet.png" width="692" height="692"/>
+  <tile id="19">
+   <properties>
+    <property name="Class" value="Player"/>
+   </properties>
+  </tile>
  </tileset>
  <layer name="Background1" width="38" height="38">
   <properties>
@@ -2905,4 +2910,7 @@
    <tile gid="333"/>
   </data>
  </layer>
+ <objectgroup name="Object Layer 1" width="38" height="38">
+  <object gid="20" x="54" y="33"/>
+ </objectgroup>
 </map>
