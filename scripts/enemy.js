@@ -48,4 +48,33 @@ Quintus.ActionPlatformerEnemy = function(Q) {
       }
     }
   });
+
+  Q.Sprite.extend("VerticalEnemy", {
+    init: function(p) {
+      this._super(p, {vy: -100, rangeY: 40, gravity: 0 });
+      this.add("2d, commonEnemy");
+      
+      this.p.initialY = this.p.y;
+      this.p.initialVy = this.p.vy;
+      this.p.vyDirection = this.p.vy/Math.abs(this.p.vy);
+
+      // Change direction when bumping into collision layer
+      var that = this;
+      this.on("bump.top, bump.bottom",function(collision) {
+        that.p.vy = -Math.abs(that.p.initialVy) * that.p.vyDirection;
+        that.p.vyDirection = that.p.vy/Math.abs(that.p.vy);
+      });
+    },
+    step: function(dt) {
+      // Change direction when end of range is reached
+      if(this.p.y - this.p.initialY >= this.p.rangeY && this.p.vy > 0) {
+        this.p.vy = -this.p.vy;
+        this.p.vyDirection *= -1;
+      }
+      else if(-this.p.y + this.p.initialY >= this.p.rangeY && this.p.vy < 0) {
+        this.p.vy = -this.p.vy;
+        this.p.vyDirection *= -1;
+      }
+    }
+  });
 };

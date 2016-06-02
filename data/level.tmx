@@ -8,6 +8,19 @@
     <property name="sheet" value="player"/>
    </properties>
   </tile>
+  <tile id="354">
+   <properties>
+    <property name="Class" value="VerticalEnemy"/>
+    <property name="rangeY" value="15"/>
+    <property name="sheet" value="bee"/>
+   </properties>
+  </tile>
+  <tile id="445">
+   <properties>
+    <property name="Class" value="VerticalEnemy"/>
+    <property name="sheet" value="ghost"/>
+   </properties>
+  </tile>
   <tile id="475">
    <properties>
     <property name="Class" value="GroundEnemy"/>
@@ -4375,8 +4388,20 @@
   <object gid="476" x="123" y="483"/>
   <object gid="476" x="516" y="567"/>
   <object gid="476" x="113" y="673"/>
-  <object gid="476" x="397" y="210"/>
-  <object gid="476" x="709" y="252"/>
-  <object gid="476" x="109" y="105"/>
+  <object gid="446" x="166" y="565"/>
+  <object gid="446" x="357" y="530"/>
+  <object gid="446" x="419" y="663"/>
+  <object gid="446" x="575" y="637"/>
+  <object gid="446" x="566" y="513"/>
+  <object gid="355" x="99" y="247"/>
+  <object gid="355" x="493" y="269"/>
+  <object gid="355" x="578" y="201"/>
+  <object gid="355" x="321" y="181"/>
+  <object gid="355" x="129" y="77"/>
+  <object gid="355" x="399" y="119"/>
+  <object gid="476" x="398" y="210"/>
+  <object gid="476" x="201" y="168"/>
+  <object gid="476" x="417" y="315"/>
+  <object gid="476" x="701" y="252"/>
  </objectgroup>
 </map>
