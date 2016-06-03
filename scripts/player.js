@@ -26,6 +26,9 @@ Quintus.ActionPlatformerPlayer = function(Q) {
     },
     damage: function() {
       Q.stageScene("level");
+    },
+    win: function() {
+      Q.stageScene("level");
     }
   });
 };

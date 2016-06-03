@@ -15,6 +15,12 @@
     <property name="sheet" value="bee"/>
    </properties>
   </tile>
+  <tile id="378">
+   <properties>
+    <property name="Class" value="Diamand"/>
+    <property name="sheet" value="power"/>
+   </properties>
+  </tile>
   <tile id="445">
    <properties>
     <property name="Class" value="VerticalEnemy"/>
@@ -1556,7 +1562,7 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="288"/>
+   <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -2029,7 +2035,7 @@
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="0"/>
+   <tile gid="47"/>
    <tile gid="0"/>
    <tile gid="19"/>
    <tile gid="0"/>
@@ -2784,7 +2790,7 @@
    <tile gid="49"/>
    <tile gid="0"/>
    <tile gid="0"/>
-   <tile gid="0"/>
+   <tile gid="47"/>
    <tile gid="0"/>
    <tile gid="0"/>
    <tile gid="0"/>
@@ -4403,5 +4409,7 @@
   <object gid="476" x="201" y="168"/>
   <object gid="476" x="417" y="315"/>
   <object gid="476" x="701" y="252"/>
+  <object gid="379" x="695" y="41"/>
+  <object gid="379" x="229" y="654"/>
  </objectgroup>
 </map>
