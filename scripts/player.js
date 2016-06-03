@@ -25,9 +25,11 @@ Quintus.ActionPlatformerPlayer = function(Q) {
       });
     },
     damage: function() {
+      alert("Ooow, you died!");
       Q.stageScene("level");
     },
     win: function() {
+      alert("Yeeeah, you won! \nThanks for playing Alien on Earth");
       Q.stageScene("level");
     }
   });
